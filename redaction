@@ -1,0 +1,44 @@
+Hi, moi c'est Ismael :)!
+Je travaille en tant que data scientist dans une boite de consulting où j'accompagne les entreprises dans la prise de décisions
+à travers le traitement, l'exploitation, la modélisation et la visualisation de données pour répondre le mieux possible aux différents bésoins business 
+et surtout de façon optimale. C'est dans ce cadre qu'un jour j'ai été affecté dans le département R&D d'une  grande marque de restauration rapide XYZ pour leur apporter mon expertise.
+Cette dernière souhaite accroitre ses parts de marché  et élargir son business à travers un plan d'investissement à court et moyen terme dans différents pays. Pour se faire, elle vise 
+dans un premier temps, certaines capitales finacières plus précisement New York et Canada sur leur éténdue. Elle souhaite connaitre en termes simples:
+        1: le potientiel de chaque capitale financière en terme d'attractivité et rentabilité c'est à dire où est il preférable d'investir en premier? 
+		2: le potentiel de business dans chaque capitale financière c'est à dire repondre à la question: quel type de business à quelle place et dans quel endroit ? 
+		3: En d'autres termes, est il préférable d'ouvrir un restaurant , une pizzeria , un fast food ou un bar  dans le Bronx plutot qu'au Brooklyn ou dans le Queens 
+		à New york ? Et, si oui le restaurant est plus rentable que les autres dans le Bronx alors quelle typologie de restaurants sera optimalement plus rentable :
+		un restaurant indien? un restaurant mexicain? un restaurant chinoix? ou restaurant africain? 
+
+Comme on peut l'imaginer ce choix est crucial et décisif pour ne pas dire vital pour les investisseurs qui avant de se lancer dans ce nouveau 
+challenge souhaiteraient êre rassurés à travers une data analyse et s'assurer un bon ROI ou Return On Investments mais aussi et surtout pour bien s'implanter et 
+être plus près des clients. Si aujourd'hui des grandes marques de téléphonies, de voitures ou des géants du web GAFAM ou encore du cloud comme AWS ont pu s'imposer sur les 
+marchés respectifs ce n'est sans doute pas pour rien : ils ont su mettre le produit qu'il faut, à la place qu'il faut pour les clients qu'il faut aux prix attractifs.
+
+Parmi la multitude de projets, j'ai préféré exposer celui ci car c'est un excercice très stumilant où il faut faire preuve d'analyse, de rigueur et 
+surtout d'une méthodologie bien précise. De plus, c'est une étude de cas d'un problème réel d'aide à la décision et d'étude de marché auquel se heurte aujour'd'hui  à l'ère du numérique toute entreprise
+désireuse de mettre en place une stratégie ou politique marketing solide pour se demarquer de ses concurrents. 
+
+Plus particulièrement, ce projet traite d'un domaine précis de la data science qui est la segmentation|clustering dans les villes de New York et Canada. Il s'agit en effet,
+de definir , caracteriser et regrouper dans des clusters l'emplacement des business les plus importants dans tous les differents Neighborhood et Borough   de ces 2 villes.
+Ce travail passe bien sur par l'utilisation de beaucoups d'outils tant pour la collecte de données, leur nettoyage , la visualisation que pour la constitution et l'analyse des clusters.
+
+Maintenant que la problématique est posée , nous passons à la description des données mais avant voici le plan du travail /
+
+
+Data description :
+
+Pour mener à bien ce projet, j'ai collecté des données de différentes sources :
+1: Pour collecter les données et avoir les Neighborhood de tous les Borough du Canada, j'ai commencé par faire du web scraping a partir du site  https://en.wikipedia.org/wiki/List_of_postal_codes_of_Canada:_M
+   Une fois la collecte effectuée, pour avoir les coordonnées géographiques de chaque Neighborhood j'ai mergé ces données avec celles de ce site https://cocl.us/Geospatial_data/Geospatial_Coordinates.csv 
+
+2: la collecte des données de New York s'est directement faite sur: ce lien https://cocl.us/new_york_dataset/newyork_data.json
+3: For the 2 cities , we have following features :
+    Borough         : Borough of the city 
+    City            : City can only be Canada or New York for distinguish
+    Latitude        : Latitude of Neighborhood
+    Longitude       : Longitude of Neighborhood
+    Neighborhood    : Neighborhood in Borough of the city 
+    Postal Code     : Postal Code  of Neighborhood but this in not important 
+
+4: I used Forsquare API to get the most common venues of given Borough of Canada and New York 
